@@ -1,7 +1,7 @@
 from telegram.ext import Updater, MessageHandler, Filters
 import json
 import logging
-from mutagen.mp3 import MP3
+import mutagen
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)
@@ -32,7 +32,7 @@ class Audio:
         new_file.download('file.mp3')
         logging.log(logging.INFO, "File downloaded")
 
-        return MP3('file.mp3')
+        return mutagen.File('file.mp3')
 
     def set_new_caption(self):
         title = ""
