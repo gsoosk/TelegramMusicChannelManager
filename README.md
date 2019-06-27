@@ -9,7 +9,8 @@ It's a simple bot to manage your music channel. With just adding this bot to you
 🎼 Genre: <genre>
 ```
 
-![alt text](https://github.com/gsoosk/TelegramMusicChannelManager/blob/master/demo.png "Demo")
+<img src="https://github.com/gsoosk/TelegramMusicChannelManager/blob/master/demo.png" width="450" />
+
 
 ## How to run ? 
 First of all you should add your bot `TOKEN` to config file.
