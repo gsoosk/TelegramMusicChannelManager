@@ -106,3 +106,7 @@ telegram-env/
 
 # PyCharm 
 .idea/
+
+# Farzad
+.DS_Store
+*.mp3
