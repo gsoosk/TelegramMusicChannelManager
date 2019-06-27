@@ -111,4 +111,4 @@ telegram-env/
 .DS_Store
 *.mp3
 
-.vscode
+.vscode/
