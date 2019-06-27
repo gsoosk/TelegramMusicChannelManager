@@ -110,3 +110,5 @@ telegram-env/
 # Farzad
 .DS_Store
 *.mp3
+
+.vscode
