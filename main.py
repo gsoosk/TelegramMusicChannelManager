@@ -1,4 +1,4 @@
-from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
+from telegram.ext import Updater, MessageHandler, Filters
 import json
 import logging
 from mutagen.mp3 import MP3
@@ -35,10 +35,26 @@ class Audio:
         return MP3('file.mp3')
 
     def set_new_caption(self):
-        title = self.audio.tags["TIT2"]
-        artist = self.audio.tags["TPE1"]
-        album = self.audio.tags["TALB"]
-        genre = self.audio.tags["TCON"]
+        title = ""
+        artist = ""
+        album = ""
+        genre = ""
+        try:
+            title = self.audio.tags["TIT2"]
+        except:
+            pass
+        try:
+            artist = self.audio.tags["TPE1"]
+        except:
+            pass
+        try:
+            album = self.audio.tags["TALB"]
+        except:
+            pass
+        try:
+            genre = self.audio.tags["TCON"]
+        except:
+            pass
 
         new_caption = '''✏️ Title: {0}
 👤 Artist: {1}
